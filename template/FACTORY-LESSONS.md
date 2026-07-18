@@ -25,3 +25,9 @@ Append one entry after every staging draft cycle. Each entry records what broke,
 - What broke: POD pages can hide fulfillment, personalization, shipping, and returns behind lifestyle copy.
 - What improved: every draft card makes those policy facts explicit and keeps `POD-TAG-PENDING` in the registry/draft notes only.
 - Template delta: POD selection requires fulfillment, personalization, delivery, and returns fields before any live CTA.
+
+## Cycle 5 — stranger batch 3 addendum
+- Niche/product class: all content-filled drafts, including photo-driven categories
+- What broke: two template families made some drafts look broken; the styled family made its unfinished state too prominent; product-photo categories had no safe pre-approval visual path.
+- What improved: all factory drafts now use the styled family with per-site palette variation; the draft banner is a single dismissible top bar and is removed by the publish flag; photo-driven drafts remain text-first until approved program tooling exists.
+- Template delta: never scrape Amazon/Etsy/merchant photos before approval. Use CC0/Openverse/Wikimedia/own generated illustrative assets later, or ship text-first. Keep all commercial links suppressed until the gate receipt and listing facts pass.
