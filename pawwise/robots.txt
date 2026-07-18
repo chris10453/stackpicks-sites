@@ -8,4 +8,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://chris10453.github.io/stackpicks-sites/pawwise/sitemap.xml
+Sitemap: https://stackpicks.net/pawwise/sitemap.xml

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chris10453.github.io/stackpicks-sites/sitemap.xml
+Sitemap: https://stackpicks.net/sitemap.xml
