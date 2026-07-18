@@ -8,4 +8,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://REPLACE-WITH-YOUR-DOMAIN/sitemap.xml
+Sitemap: https://chris10453.github.io/stackpicks-sites/pawwise/sitemap.xml
