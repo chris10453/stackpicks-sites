@@ -1,0 +1,44 @@
+from pathlib import Path
+from html import escape
+
+ROOT = Path('/home/ai/stackpicks-sites/factory-drafts')
+
+SITES = {
+    'travel-esim-guides': ('Travel eSIM comparison guides', 'Compare travel eSIM plans by coverage, activation steps, renewal terms, and cancellation clarity.', 'SIGNUP_GATE: IMPACT_OR_AWIN_TRAVEL_PARTNER_REQUIRED', 'sky', ['coverage map', 'activation checklist', 'renewal terms']),
+    'travel-insurance-compare': ('Travel insurance comparison guides', 'A practical way to compare policy wording, exclusions, claims steps, and destination fit before checkout.', 'SIGNUP_GATE: PARTNER_APPROVAL_REQUIRED', 'coral', ['coverage wording', 'exclusions checklist', 'claims steps']),
+    'home-office-ergonomics': ('Home office ergonomics guides', 'Compare small-space desk setups by adjustability, footprint, setup effort, and return-policy clarity.', 'SIGNUP_GATE: AMAZON_TAG_REQUIRED', 'indigo', ['small-space fit', 'adjustability', 'return-policy questions']),
+    'kitchen-organization': ('Kitchen organization comparison guides', 'Compare organizers by dimensions, access, cleaning effort, renter-friendliness, and return terms.', 'SIGNUP_GATE: AMAZON_TAG_REQUIRED', 'sage', ['small-kitchen fit', 'dimensions checklist', 'renter-friendly questions']),
+    'pet-insurance-tools': ('Pet insurance decision tools', 'A plain-language checklist for comparing deductibles, exclusions, reimbursement, and waiting periods.', 'SIGNUP_GATE: PARTNER_APPROVAL_REQUIRED', 'plum', ['deductibles', 'exclusions', 'waiting periods']),
+    'budgeting-apps': ('Budgeting app comparison guides', 'Compare budgeting tools by setup, account connection, export options, privacy terms, and recurring price.', 'SIGNUP_GATE: IMPACT_OR_AWIN_FINANCE_PARTNER_REQUIRED', 'amber', ['setup effort', 'privacy questions', 'export options']),
+    'credit-monitoring': ('Credit monitoring explainer guides', 'Understand monitoring scope, alert timing, cancellation terms, and what a service does not promise.', 'SIGNUP_GATE: PARTNER_APPROVAL_REQUIRED', 'slate', ['monitoring scope', 'alert terms', 'cancellation']),
+    'saas-project-management': ('Project management SaaS comparisons', 'Compare project tools by team size, permissions, exports, integrations, and plan limits.', 'SIGNUP_GATE: SAAS_PARTNER_APPROVAL_REQUIRED', 'ocean', ['team fit', 'permissions', 'export questions']),
+    'saas-email-marketing': ('Email marketing SaaS comparisons', 'Compare email tools by list limits, automation, deliverability controls, exports, and billing terms.', 'SIGNUP_GATE: SAAS_PARTNER_APPROVAL_REQUIRED', 'rose', ['list limits', 'automation', 'billing terms']),
+    'sleep-tools': ('Sleep product evidence guides', 'A cautious checklist for comparing sleep products by ingredients or specifications, terms, and refund clarity.', 'SIGNUP_GATE: CLICKBANK_PRODUCT_GATE_REQUIRED', 'night', ['label/spec review', 'claims check', 'refund terms']),
+    'gut-health-tools': ('Gut-health product evidence guides', 'A cautious guide to reading product labels, evidence claims, recurring billing, and refund language.', 'SIGNUP_GATE: CLICKBANK_PRODUCT_GATE_REQUIRED', 'mint', ['label checklist', 'evidence questions', 'billing terms']),
+    'dog-training-programs': ('Online dog training program comparisons', 'Compare training programs by format, lesson structure, support, age range, and cancellation terms.', None, 'copper', ['program format', 'support model', 'cancellation']),
+}
+
+PALETTES = {
+    'sky': ('#102a43', '#dff3ff', '#1677a8', '#f7fbff'), 'coral': ('#3b1f2b', '#ffe7df', '#c65342', '#fffaf8'),
+    'indigo': ('#20204a', '#e6e9ff', '#5254b8', '#fbfbff'), 'sage': ('#20352d', '#e5f1e8', '#39785c', '#fbfdf9'),
+    'plum': ('#351d3b', '#f2e4f5', '#894a9b', '#fffaff'), 'amber': ('#3d2b0f', '#fff0c2', '#b46b00', '#fffdf7'),
+    'slate': ('#1d2c3d', '#e3edf7', '#3c79a8', '#fbfdff'), 'ocean': ('#082f49', '#dff5f2', '#0f766e', '#f7fffe'),
+    'rose': ('#451a2b', '#ffe4ee', '#c23b70', '#fffafd'), 'night': ('#172033', '#e8edff', '#667eea', '#fafbff'),
+    'mint': ('#173b38', '#ddf7ee', '#16806d', '#f8fffc'), 'copper': ('#42210f', '#ffead5', '#b45309', '#fffaf5'),
+}
+
+CSS = '''*{box-sizing:border-box}body{margin:0;background:{bg};color:{text};font:16px/1.65 system-ui,-apple-system,sans-serif}a{{color:{accent}}}.wrap{{max-width:1040px;margin:auto;padding:0 20px 64px}}.draft-bar{{display:flex;gap:12px;align-items:center;justify-content:center;background:{accent};color:#fff;padding:9px 14px;font-size:.88rem}}.draft-bar button{{border:1px solid #ffffff99;background:transparent;color:#fff;border-radius:999px;padding:3px 10px;cursor:pointer}}header{{padding:28px 0 20px;border-bottom:1px solid #00000018}}nav{{display:flex;gap:18px;flex-wrap:wrap;font-size:.92rem}}.eyebrow{{color:{accent};font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}}h1{{font-size:clamp(2rem,5vw,4rem);line-height:1.05;max-width:760px;margin:14px 0}}.lede{{font-size:1.15rem;max-width:720px;color:{muted}}}.notice,.gate{{background:{panel};border:1px solid #00000018;border-radius:16px;padding:18px;margin:22px 0}}.notice{{border-left:5px solid {accent}}}.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:24px 0}}.card{{background:{panel};border:1px solid #00000018;border-radius:16px;padding:20px;box-shadow:0 8px 22px #0000000b}}.card h2{{margin-top:0;font-size:1.08rem}}.label{{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:{muted};font-weight:700}}footer{{border-top:1px solid #00000018;padding-top:18px;color:{muted};font-size:.9rem}}'''
+
+for slug, (name, intro, gate, palette, criteria) in SITES.items():
+    dark, soft, accent, bg = PALETTES[palette]
+    style = (CSS.replace('{bg}', bg).replace('{text}', dark).replace('{accent}', accent).replace('{panel}', '#ffffffcc').replace('{muted}', '#526477'))
+    gate_text = ('A qualifying vendor link is not shown until the required program receipt is complete and the listing facts are rechecked.' if gate else 'A vendor link is shown only after the destination, program terms, and offer facts pass the same review.')
+    gate_line = f'<p class="label">Commercial gate</p><p>{escape(gate_text)}</p>' + (f'<p class="label">Internal gate marker</p><p>{escape(gate)}</p>' if gate else '')
+    cards = ''.join(f'<article class="card"><p class="label">Decision lens {i}</p><h2>{escape(x.title())}</h2><p>Record the source, date checked, and the exact term before treating this as a comparison fact.</p></article>' for i, x in enumerate(criteria, 1))
+    image_note = ''
+    if slug in {'kitchen-organization'}:
+        image_note = '<p><strong>Visual policy:</strong> This draft is text-first. No retailer or marketplace product photos are scraped before approval; illustrative imagery may be added later only from CC0, Wikimedia/Openverse, or our own generated assets.</p>'
+    html = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(name)} — researched comparison</title><meta name="site-id" content="{slug}"><meta name="publish-flag" content="draft"><style>{style}</style></head><body><script>if(document.querySelector('meta[name="publish-flag"]')?.content==='published')document.querySelector('[data-draft-only]')?.remove();</script><div class="draft-bar" data-draft-only="true"><span>STAGING DRAFT · NOT LIVE</span><button type="button" aria-label="Dismiss staging banner" onclick="this.parentElement.remove()">Dismiss</button></div><div class="wrap"><header><nav><a href="index.html">{escape(name)}</a><a href="affiliate-disclosure.html">Disclosure</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></header><main><p class="eyebrow">StackPicks research desk · {escape(slug)}</p><h1>{escape(name)}</h1><p class="lede">{escape(intro)}</p><div class="notice"><strong>Affiliate disclosure:</strong> We may earn a commission from a marked link after approval. That does not change the criteria or labels. <a href="affiliate-disclosure.html">Learn more</a>.</div><section><h2>What this guide checks</h2><div class="grid">{cards}</div>{image_note}<div class="gate">{gate_line}</div></section><p class="label">Research boundary</p><p>Decision support only. No efficacy, safety, financial, or outcome score is implied. No first-hand experience, testimonial, price, or product fact is claimed without a dated source.</p></main><footer><p>Research and reviews by the StackPicks research team. Contact: <a href="mailto:stackpicksmedia@gmail.com">stackpicksmedia@gmail.com</a></p><p><a href="affiliate-disclosure.html">Affiliate Disclosure</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p></footer></div></body></html>'''
+    out = ROOT / slug / 'index.html'
+    out.write_text(html)
+print(f'rebuilt {len(SITES)} styled drafts')
