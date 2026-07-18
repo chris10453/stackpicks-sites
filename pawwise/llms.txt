@@ -4,14 +4,14 @@
 
 ## Key pages
 
-- [PawWise — Honest Reviews of Online Dog Training Programs (2026)](https://chris10453.github.io/stackpicks-sites/pawwise/): Homepage with an overview of our reviews and guides for dog owners.
-- [4 Best Online Dog Training Programs in 2026 (Compared)](https://chris10453.github.io/stackpicks-sites/pawwise/best-online-dog-training-programs.html): Side-by-side comparison of four popular online dog training programs on method, price, and results.
-- [Brain Training for Dogs Review (2026): Is It Worth $47?](https://chris10453.github.io/stackpicks-sites/pawwise/brain-training-for-dogs-review.html): In-depth review of the Brain Training for Dogs program, what's included, and who it's for.
-- [How to Stop Nuisance Dog Barking (Free Step-by-Step Method)](https://chris10453.github.io/stackpicks-sites/pawwise/how-to-stop-dog-barking.html): A free, force-free method for fixing attention and boredom barking.
-- [4 Best Dog Enrichment Toys in 2026 (Honest Roundup)](https://chris10453.github.io/stackpicks-sites/pawwise/best-dog-enrichment-toys-2026.html): Research-based comparison of a motion-activated ball, treat puzzle, recordable communication buttons, and an indestructible chew toy.
-- [3 Best Deshedding Tools for Dogs in 2026 (Compared)](https://chris10453.github.io/stackpicks-sites/pawwise/best-deshedding-tools-2026.html): Research-based comparison of a self-cleaning deshedding brush, grooming gloves, and a dog nail grinder.
-- [As Seen On Our TikTok — PawWise Picks](https://chris10453.github.io/stackpicks-sites/pawwise/tiktok.html): Link-in-bio page listing every product featured on the PawWise TikTok with short honest verdicts.
-- [About PawWise](https://chris10453.github.io/stackpicks-sites/pawwise/about.html): Who's behind PawWise and how we review online dog training programs.
-- [Affiliate Disclosure — PawWise](https://chris10453.github.io/stackpicks-sites/pawwise/affiliate-disclosure.html): Our affiliate relationships and disclosure policy.
+- [PawWise — Honest Reviews of Online Dog Training Programs (2026)](https://REPLACE-WITH-YOUR-DOMAIN/): Homepage with an overview of our reviews and guides for dog owners.
+- [4 Best Online Dog Training Programs in 2026 (Compared)](https://REPLACE-WITH-YOUR-DOMAIN/best-online-dog-training-programs.html): Side-by-side comparison of four popular online dog training programs on method, price, and results.
+- [Brain Training for Dogs Review (2026): Is It Worth $47?](https://REPLACE-WITH-YOUR-DOMAIN/brain-training-for-dogs-review.html): In-depth review of the Brain Training for Dogs program, what's included, and who it's for.
+- [How to Stop Nuisance Dog Barking (Free Step-by-Step Method)](https://REPLACE-WITH-YOUR-DOMAIN/how-to-stop-dog-barking.html): A free, force-free method for fixing attention and boredom barking.
+- [4 Best Dog Enrichment Toys in 2026 (Honest Roundup)](https://REPLACE-WITH-YOUR-DOMAIN/best-dog-enrichment-toys-2026.html): Research-based comparison of a motion-activated ball, treat puzzle, recordable communication buttons, and an indestructible chew toy.
+- [3 Best Deshedding Tools for Dogs in 2026 (Compared)](https://REPLACE-WITH-YOUR-DOMAIN/best-deshedding-tools-2026.html): Research-based comparison of a self-cleaning deshedding brush, grooming gloves, and a dog nail grinder.
+- [As Seen On Our TikTok — PawWise Picks](https://REPLACE-WITH-YOUR-DOMAIN/tiktok.html): Link-in-bio page listing every product featured on the PawWise TikTok with short honest verdicts.
+- [About PawWise](https://REPLACE-WITH-YOUR-DOMAIN/about.html): Who's behind PawWise and how we review online dog training programs.
+- [Affiliate Disclosure — PawWise](https://REPLACE-WITH-YOUR-DOMAIN/affiliate-disclosure.html): Our affiliate relationships and disclosure policy.
 
 Note: some links on this site are affiliate links, and we may earn a commission at no extra cost to you. Content is informational and research-based, and is not a substitute for professional veterinary or behavioral advice.
