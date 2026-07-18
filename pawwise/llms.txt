@@ -1,6 +1,6 @@
 # PawWise
 
-> Independent, research-based reviews of online dog training programs, helping owners fix barking, biting, and leash-pulling from home.
+> Independent, research-based reviews of online dog training programs that may help owners work on barking, biting, and leash-pulling from home.
 
 ## Key pages
 

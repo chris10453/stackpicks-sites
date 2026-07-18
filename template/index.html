@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{SITE_NAME}} — researched comparisons</title>
+  <meta name="site-id" content="{{SITE_ID}}">
+  <link rel="canonical" href="{{REAL_SITE_URL}}/">
+</head>
+<body>
+  <!-- NON-EDITABLE BOILERPLATE: identity block. Customize only values in {{BRACES}}. -->
+  <header>
+    <p><strong>{{SITE_NAME}}</strong> — an independent comparison publisher.</p>
+    <p>Research and reviews by the StackPicks research team. Contact: <a href="mailto:stackpicksmedia@gmail.com">stackpicksmedia@gmail.com</a></p>
+  </header>
+
+  <main>
+    <h1>{{PAGE_HEADLINE}}</h1>
+
+    <!-- NON-EDITABLE BOILERPLATE: disclosure MUST stay above the first commercial CTA. -->
+    <p class="affiliate-disclosure"><strong>Affiliate disclosure:</strong> We may earn a commission when you buy through a marked link, at no extra cost to you. This does not change our research or labels. <a href="affiliate-disclosure.html">Learn more</a>.</p>
+
+    <!-- NON-EDITABLE BOILERPLATE: shopping rubric label; never turn this into an efficacy/rating claim. -->
+    <p class="score-label"><strong>Checkout-Clarity Score:</strong> shopping-information clarity only; not an efficacy, safety, outcome, or suitability score.</p>
+
+    <section aria-label="comparison">
+      <!-- Commercial CTA/offer links may appear only after the disclosure above. -->
+      <article class="offer-row">
+        <h2>{{PRODUCT_NAME}}</h2>
+        <p><strong>Score:</strong> {{RUBRIC_SCORE_OR_INSUFFICIENT_INFO}}</p>
+        <p>{{QUALIFIED_SUMMARY}} Individual outcomes vary.</p>
+        <!-- If insufficient info to rate: keep the row, omit the offer link, and keep one-line reason. -->
+        <p class="insufficient-info">{{ONE_LINE_REASON_IF_NOT_VERIFIABLE}}</p>
+        <a class="offer-link" rel="nofollow sponsored" href="{{VERIFIED_OFFER_URL}}">Check current offer →</a>
+      </article>
+    </section>
+  </main>
+
+  <!-- NON-EDITABLE BOILERPLATE: legal links. -->
+  <footer>
+    <p><a href="about.html">About</a> · <a href="affiliate-disclosure.html">Affiliate Disclosure</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+  </footer>
+</body>
+</html>
