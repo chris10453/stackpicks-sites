@@ -40,7 +40,7 @@ p{margin:0 0 1em}
 .byline time{margin-left:auto;font-family:var(--mono);font-size:.8rem}
 .avatar{width:40px;height:40px;border-radius:50%;object-fit:cover}
 .hero{margin:0 0 1.5rem}
-.hero img{width:100%;aspect-ratio:21/9;max-height:26rem;object-fit:cover;border-radius:14px}
+.hero img{width:100%;height:auto;max-height:28rem;object-fit:contain;border-radius:14px}
 figcaption{font-size:.78rem;color:var(--ink-2);margin-top:.4rem}
 
 /* signature: the ledger — the whole answer above the fold, set like a receipt */
@@ -55,7 +55,7 @@ figcaption{font-size:.78rem;color:var(--ink-2);margin-top:.4rem}
 @media (max-width:640px){.ledger li{grid-template-columns:1fr;grid-template-areas:"award" "name" "why" "cta"}.ledger .cta{justify-self:start;margin-top:.35rem}}
 
 /* CTA */
-.cta{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none;padding:.7rem 1.1rem;border-radius:10px;font-size:.98rem;line-height:1.2;white-space:nowrap}
+.cta{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none;padding:.7rem 1.1rem;border-radius:10px;font-size:.98rem;line-height:1.25;max-width:100%}
 .cta:hover{filter:brightness(.93)}
 .cta-sm{padding:.55rem .9rem;font-size:.9rem}
 .buy-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem}
@@ -110,3 +110,19 @@ td:last-child{font-family:var(--body);white-space:nowrap}
 .prose{max-width:var(--measure)}
 .foot{border-top:1px solid var(--rule);padding:1.5rem 1.25rem 3rem;font-size:.85rem;color:var(--ink-2);max-width:var(--wide);margin:0 auto}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* additions: price band chip, not-for line, winner row, final verdict */
+.band{display:inline-grid;place-items:center;font-family:var(--mono);font-size:.85rem;letter-spacing:.1em;color:var(--stamp);background:var(--tint);border-radius:10px;padding:.55rem .7rem}
+.not-for{font-size:.95rem;color:var(--ink-2);border-left:3px solid var(--rule);padding-left:.8rem}
+tr.winner th,tr.winner td{background:var(--tint)}
+tr.winner th::after{content:" ★";color:var(--accent)}
+.final{max-width:var(--measure);margin-top:2rem;padding:1.25rem;background:var(--card);border:1px solid var(--rule);border-radius:14px}
+.final h2{margin-top:0}
+
+/* quiet second-retailer link; hub thumbnails */
+.also-at{align-self:center;font-size:.9rem;color:var(--ink-2)}
+.ledger li.has-thumb{grid-template-columns:5rem 9rem 1fr auto;grid-template-areas:"thumb award name cta" "thumb award why cta"}
+.thumb{grid-area:thumb}.thumb img{width:80px;height:80px;border-radius:10px;object-fit:cover;background:var(--tint)}
+@media (max-width:640px){.ledger li.has-thumb{grid-template-columns:5rem 1fr;grid-template-areas:"thumb award" "thumb name" "thumb why" "cta cta"}}
+.band-sm{font-size:.7rem;padding:.15rem .4rem;vertical-align:middle;margin-left:.3rem}
+@media (max-width:640px){.masthead{flex-direction:column;align-items:flex-start;gap:.5rem}.masthead nav ul{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;width:100%;padding-bottom:.2rem;scrollbar-width:none}}
