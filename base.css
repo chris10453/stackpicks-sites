@@ -125,4 +125,4 @@ tr.winner th::after{content:" ★";color:var(--accent)}
 .thumb{grid-area:thumb}.thumb img{width:80px;height:80px;border-radius:10px;object-fit:cover;background:var(--tint)}
 @media (max-width:640px){.ledger li.has-thumb{grid-template-columns:5rem 1fr;grid-template-areas:"thumb award" "thumb name" "thumb why" "cta cta"}}
 .band-sm{font-size:.7rem;padding:.15rem .4rem;vertical-align:middle;margin-left:.3rem}
-@media (max-width:640px){.masthead{flex-direction:column;align-items:flex-start;gap:.5rem}.masthead nav ul{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;width:100%;padding-bottom:.2rem;scrollbar-width:none}}
+@media (max-width:640px){.masthead{flex-direction:column;align-items:flex-start;gap:.5rem}.masthead nav{width:100%;min-width:0}.masthead nav ul{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;width:100%;padding-bottom:.2rem;scrollbar-width:none}}
