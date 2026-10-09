@@ -34,7 +34,7 @@ p{margin:0 0 1em}
 .masthead nav a:hover{color:var(--ink);text-decoration:underline}
 
 /* trust strip */
-.disclosure{font-size:.85rem;color:var(--ink-2);margin:.25rem 0 .75rem}
+.disclosure{font-size:.95rem;color:var(--ink);margin:.25rem 0 .75rem}
 .byline{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;font-size:.92rem;color:var(--ink-2);margin:0 0 1.25rem}
 .byline a{color:var(--ink);font-weight:600}
 .byline time{margin-left:auto;font-family:var(--mono);font-size:.8rem}
