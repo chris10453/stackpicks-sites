@@ -138,3 +138,7 @@ thead th:first-child{position:sticky;left:0;z-index:2;background:var(--tint)}
 .score-why{font-family:var(--body);font-size:.85rem;color:var(--ink-2)}
 .score-sm{background:var(--stamp);color:#fff}
 .ftc{font-size:.8rem;color:var(--ink-2);margin:.6rem 0 .2rem}
+
+.toppick{margin:12px 0 16px;padding:12px 14px;border:1px solid var(--rule,#ddd);border-radius:6px}
+.toppick p{margin:0;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:space-between}
+.toppick .holiday-note{display:block;margin-top:8px;font-size:.875em;opacity:.8}
